@@ -1,1 +1,34 @@
 // Mixins in here
+
+
+.center-all(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons(@bg-color, @font-color, @width) {
+    background: @bg-color;
+    color: @font-color;
+    width: @width;
+    border: solid 1px @bg-color;
+    text-align:center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background: @font-color;
+        color: @bg-color;
+    }
+    
+}
+
+
+
+.phone(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
